@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: repeat();
+  justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  margin-top: 30px;
+}
+
+.photo > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo > .rank {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 86px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #8B0000;
+  font-size: 16px;
+}
+
+.person {
+  text-align: center;
+  color: #2F4F4F;
+  font-size: 20px;
+}
+
+.extra {
+  visibility: hidden;
+  color: black;
+  font-size: 18px;
+}
+
+.person:hover .extra {
+  visibility: visible;
+}
+.person:hover img {
+  transform: scale(1.2);
+  border-radius: 60px;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .people {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
