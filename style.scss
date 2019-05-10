@@ -12,6 +12,7 @@ body {
   margin-top: 30px;
 }
 
+
 .photo > img {
     width: 200px;
     height: 200px;
@@ -19,9 +20,6 @@ body {
     transition: all 1s ease;
 }
 
-.photo {
-    position: relative;
-}
 
 .photo > .rank {
     width: 32px;
